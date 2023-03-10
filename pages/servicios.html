@@ -14,42 +14,38 @@
 
 <body>
     <div class="gridcontainer">
-
         <header class="cabecera">
-            <div>
-                <a href="../index.html"><img class="logo" src="../imagen_logo.ico" alt="logo"></a>
-            </div>
-            <!--La lista se hacen así para la entrega/son las anclas de navegacion-->
-            <nav class="navmenu">
-                <ul class="ul">
-                    <li class="listaitem">
-                        <a class="linknav" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="listaitem">
-                        <a class="linknav" href="../pages/labarberia.html">LaBarberia</a>
-                    </li>
-                    <li class="listaitem">
-                        <a class="linknav" href="../pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="listaitem">
-                        <a class="linknav" href="../pages/galeria.html">Galeria</a>
-                    </li>
-                    <li class="listaitem">
-                        <a class="turnos" href="../pages/turnos.html">Turnos</a>
-                    </li>
-
-                </ul>
-
-        </header>
-        <main>
+            
         
-            <h1 class="titulo-servicios">Nuestros servicios</h1>
+            
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img class="logo-index" src="../imagen_logo.ico" alt="logo"></span>
+                    
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="../pages/labarberia.html">La Barberia</a>
+                      <a class="nav-link" href="#">Servicios</a>
+                      <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                      <a class="nav-link" href="../pages/turnos.html">Turnos</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+         </header>     
+
+        <main class="servicios">
+        
+            <h1 class="servicios__titulo">Nuestros servicios</h1>
             
 
             
-            <div class="servicios">
+            <div class="servicios__cards">
                     <div class="card" style="width: 18rem;">
-                        <img src="../img/tijera.png" class="card-img-top" alt="foto tijera">
+                        <img src="../assets/img/tijera.png" class="card-img-top" alt="foto tijera">
                         <div class="card-body">
                             <h5 class="card-title">Corte de cabello</h5>
                             <p class="card-text">Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.</p>
@@ -59,7 +55,7 @@
                 
                 
                     <div class="card" style="width: 18rem;">
-                        <img src="../img/color.png" class="card-img-top" alt="foto pincel">
+                        <img src="../assets/img/color.png" class="card-img-top" alt="foto pincel">
                         <div class="card-body">
                             <h5 class="card-title">Color y Decoloracion</h5>
                             <p class="card-text"> Las tendencias y los tonos cambian.Animate vos también a elegirlo.</p>
@@ -69,7 +65,7 @@
                 
                 
                     <div class="card" style="width: 18rem;">
-                        <img src="../img/navaja.png" class="card-img-top" alt="navaja">
+                        <img src="../assets/img/navaja.png" class="card-img-top" alt="navaja">
                         <div class="card-body">
                             <h5 class="card-title">Arreglo de barba</h5>
                             <p class="card-text">Afeitada tradicional o recorte de barba. Contamos con el servicio de toalla caliente.</p>
@@ -79,7 +75,7 @@
                 
                 
                     <div class="card" style="width: 18rem;">
-                        <img src="../img/niños.png" class="card-img-top" alt="foto corte niño">
+                        <img src="../assets/img/niños.png" class="card-img-top" alt="foto corte niño">
                         <div class="card-body">
                             <h5 class="card-title">Corte niños</h5>
                             <p class="card-text">Los niños ya saben el estilo que quieren, por eso atendemos sus antojos.</p>
@@ -93,33 +89,31 @@
 
         </main>
 
-
         <footer class="piedepagina">
-            <div class="mapa">
+            <div class="piedepagina__mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.918604127627!2d-58.485659185196106!3d-34.58092606379874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6699986cff3%3A0x6a1ebfbf3957668b!2sBucarelli%201867%2C%20C1431DQI%20CABA!5e0!3m2!1ses-419!2sar!4v1673916244965!5m2!1ses-419!2sar"
                     width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="datoscontacto">
+            <div class="piedepagina__datos-contacto">
                 <p>Bradley 305,Hurlingham</p><br>
                 <p>Martes a sabados de 9:00 a 20:00hs</p><br>
                 <p>Contactanos<br>11-5898-7887</p><br><br>
-
+  
             </div>
-            <div class="socialmedia">
-                <p class="titulo-redes">¡Seguinos en nuestras redes!</p>
+            <div class="piedepagina__social-media">
+                <p class="piedepagina__social-media__titulo-redes">¡Seguinos en nuestras redes!</p>
                 <div>
-                    <img src="../img/instalogo.png" alt="logoinsta">
-                    <img src="../img/logoface.png" alt="logoface">
-                    <img src="../img/logowsp.png" alt="logowsp">
+                    <img src="../assets/img/instalogo.png" alt="logoinsta">
+                    <img src="../assets/img/logoface.png" alt="logoface">
+                    <img src="../assets/img/logowsp.png" alt="logowsp">
                 </div>
             </div>
-
-
-
-
         </footer>
+
+
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2? family= Anton & family= Indie+Flower & family= Roboto:wght@300 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'anton', sans-serif;
+  font-weight: 400; }
+
+.cabecera {
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 20vh;
+  z-index: 1; }
+
+.navbar-brand {
+  color: white; }
+
+.nav-link {
+  color: white; }
+
+.nav-link:hover {
+  color: gray;
+  transition: 0.3s; }
+
+.nav-link__turnos {
+  text-decoration: none;
+  border-style: solid;
+  background-color: #d14c4c;
+  color: white; }
+
+.nav-link__turnos:hover {
+  color: #9b3838;
+  transition: 0.5s; }
+
+.navbar-toggler-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.logo-index {
+  width: 150%; }
+
+.Mindex {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/img/imageninicio.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.Mindex__titulo {
+  color: whitesmoke;
+  font-size: 2rem; }
+
+.Mlabarberia {
+  background-color: white;
+  display: flex;
+  width: 100%; }
+  .Mlabarberia .Mlabarberia__imagen {
+    width: 50vw;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.678); }
+  .Mlabarberia .Mlabarberia__historia {
+    text-align: center;
+    margin: auto;
+    width: 50vw; }
+
+.Mgaleria {
+  background-color: white; }
+  .Mgaleria .Mgaleria__titulo {
+    margin-top: 20px;
+    text-align: center; }
+  .Mgaleria .Mgaleria__formato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px; }
+    .Mgaleria .Mgaleria__formato .Mgaleria__formato__item {
+      width: 30%;
+      height: 45%;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.Mgaleria__formato__item img {
+  width: 100%;
+  height: 100%; }
+
+.servicios {
+  background-color: color-secundario; }
+  .servicios .servicios__titulo {
+    margin: auto;
+    border-style: solid;
+    width: fit-content; }
+  .servicios .servicios__cards {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px; }
+    .servicios .servicios__cards .card {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .servicios .servicios__cards .card .card-img-top {
+        padding-top: 20px;
+        height: 10vh;
+        width: 5vw; }
+    .servicios .servicios__cards .card-title {
+      font-size: 1.5rem; }
+  .servicios .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.main-turnos {
+  height: 60vh; }
+
+.piedepagina {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 40vh; }
+  .piedepagina .piedepagina__mapa {
+    margin-top: 30px; }
+  .piedepagina .piedepagina__datos-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    color: #f4f4f5; }
+  .piedepagina .piedepagina__social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .piedepagina .piedepagina__social-media .piedepagina__social-media__titulo-redes {
+      color: white; }
+
+@media (max-width: 768px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-areas: "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 60%; }
+  .cabecera {
+    grid-area: main;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    position: static;
+    background-color: black; }
+  main {
+    grid-area: main; }
+  .Mindex {
+    height: 220vh; }
+  .Mlabarberia {
+    display: flex;
+    flex-direction: column; }
+    .Mlabarberia .Mlabarberia__historia {
+      width: 100%;
+      height: 40vh; }
+    .Mlabarberia .Mlabarberia__imagen {
+      width: 100%;
+      height: 100vh; }
+  .Mgaleria .galeria__formato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .Mgaleria .galeria__formato .galeria__formato__item {
+      height: 15vh;
+      width: 40vw; }
+  .servicios__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 10px; }
+  footer {
+    grid-area: footer; }
+  .piedepagina {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 140vh;
+    padding: 32px 0; } }

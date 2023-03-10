@@ -1,0 +1,45 @@
+
+
+.servicios{
+    background-color: color-secundario ;
+    .servicios__titulo{
+        margin:auto;
+        border-style: solid;
+        width:fit-content;
+}
+.servicios__cards{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .card-img-top{
+            padding-top: 20px ;
+            height: 10vh;
+            width: 5vw;
+        }
+    }
+    .card-title{
+        font-size: 1.5rem;
+        }
+    
+ }
+ .btn-primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+    
+}
+
+
+
+
+
+
+
