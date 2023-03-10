@@ -1,0 +1,86 @@
+@media (max-width:768px){
+    
+    .gridcontainer{
+        display: grid;
+        grid-template-areas:
+            
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 60%;
+    }
+    .cabecera {
+        grid-area: main;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        position:static;
+        background-color: $color-primario;
+    }
+    
+    
+     main {
+        grid-area: main;
+     }
+    
+    
+     .Mindex{
+        height: 220vh;
+     }
+    
+     .Mlabarberia{
+        display: flex;
+        flex-direction: column;
+        .Mlabarberia__historia{
+         width: 100%;
+         height: 40vh;
+      }
+      .Mlabarberia__imagen{
+         width: 100%;
+         height: 100vh;
+     
+      }
+     }
+  
+    
+    
+    .Mgaleria{
+     .galeria__formato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .galeria__formato__item{
+         height: 15vh;
+         width: 40vw;
+      }
+     }
+   }
+    
+    
+     .servicios__cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 10px;
+        
+     }
+    
+     
+    
+    footer {
+        grid-area: footer;    
+    }
+    
+    .piedepagina{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 140vh;
+        padding: 32px 0;
+    }
+    
+    
+    }

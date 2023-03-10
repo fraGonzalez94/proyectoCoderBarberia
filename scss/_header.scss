@@ -1,0 +1,52 @@
+
+
+
+.cabecera{
+    top:0;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content:center ;
+    align-items: center;
+    background-color: $color-primario;
+    height: 20vh;
+    z-index: 1;
+    
+     
+}
+
+
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: gray;
+    transition: 0.3s;
+}
+
+
+.nav-link__turnos{
+    text-decoration: none;
+    border-style: solid;
+    background-color: rgb(209, 76, 76);
+    color:white;    
+   
+}
+.nav-link__turnos:hover{
+    color:rgb(155, 56, 56);
+    transition: 0.5s;
+}
+ 
+
+.navbar-toggler-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-index{
+     width: 150%;
+}

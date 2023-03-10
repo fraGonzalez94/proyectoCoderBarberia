@@ -1,0 +1,19 @@
+.Mlabarberia
+{
+    background-color: $color-secundario;
+    display: flex;
+    width: 100%;
+    .Mlabarberia__imagen{
+        width: 50vw;
+        height: 80vh;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
+    }
+    .Mlabarberia__historia{
+        text-align: center;
+        margin: auto;
+        width: 50vw;
+        }
+}
+
+
