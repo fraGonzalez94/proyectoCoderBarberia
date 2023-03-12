@@ -30,6 +30,7 @@
 .nav-link__turnos {
   text-decoration: none;
   border-style: solid;
+  border-radius: 15px;
   background-color: #d14c4c;
   color: white; }
 
@@ -132,17 +133,14 @@
   .piedepagina .piedepagina__mapa {
     margin-top: 30px; }
   .piedepagina .piedepagina__datos-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 60px;
     color: #f4f4f5; }
-  .piedepagina .piedepagina__social-media {
+  .piedepagina .piedepagina__social-media, .piedepagina .piedepagina__datos-contacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .piedepagina .piedepagina__social-media .piedepagina__social-media__titulo-redes {
+    justify-content: center;
+    align-items: center; }
+    .piedepagina .piedepagina__social-media .piedepagina__social-media__titulo-redes, .piedepagina .piedepagina__datos-contacto .piedepagina__social-media__titulo-redes {
       color: white; }
 
 @media (max-width: 768px) {

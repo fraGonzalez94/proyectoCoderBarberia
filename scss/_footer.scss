@@ -1,26 +1,22 @@
 
 .piedepagina{
     background-color: $color-primario;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @import "mixins";
+    @include flex-direction-justificar (row,space-around);
     height: 40vh;
     .piedepagina__mapa{
         margin-top: 30px;
     }
     .piedepagina__datos-contacto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend .piedepagina__social-media;
         margin-top: 60px;
         color: rgb(244, 244, 245);
           
     }
     .piedepagina__social-media{
-        display: flex;
-        flex-direction: column;
+        @import "mixins";
+        @include flex-direction-justificar (column);
         align-items: center;
-        justify-content: center;
         .piedepagina__social-media__titulo-redes{
             color: white;
         }

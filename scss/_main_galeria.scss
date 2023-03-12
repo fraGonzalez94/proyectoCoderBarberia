@@ -13,7 +13,7 @@
         .Mgaleria__formato__item{
             width: 30%;
             height: 45%;
-            border-radius: 5px;
+            border-radius: map-get($bordes, border-radius-cincopx );
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             
             

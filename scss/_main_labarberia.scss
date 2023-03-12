@@ -6,7 +6,7 @@
     .Mlabarberia__imagen{
         width: 50vw;
         height: 80vh;
-        border-radius: 10px;
+        border-radius: map-get($bordes, border-radius-diezpx);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
     }
     .Mlabarberia__historia{
