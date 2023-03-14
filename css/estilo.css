@@ -46,7 +46,7 @@
 .logo-index {
   width: 150%; }
 
-.Mindex {
+.mindex {
   display: flex;
   height: 80vh;
   align-items: center;
@@ -55,42 +55,41 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
+  .mindex .mindex__titulo {
+    color: whitesmoke;
+    font-size: 2rem; }
 
-.Mindex__titulo {
-  color: whitesmoke;
-  font-size: 2rem; }
-
-.Mlabarberia {
+.mlabarberia {
   background-color: white;
   display: flex;
   width: 100%; }
-  .Mlabarberia .Mlabarberia__imagen {
+  .mlabarberia .mlabarberia__imagen {
     width: 50vw;
     height: 80vh;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.678); }
-  .Mlabarberia .Mlabarberia__historia {
+  .mlabarberia .mlabarberia__historia {
     text-align: center;
     margin: auto;
     width: 50vw; }
 
-.Mgaleria {
+.mgaleria {
   background-color: white; }
-  .Mgaleria .Mgaleria__titulo {
+  .mgaleria .mgaleria__titulo {
     margin-top: 20px;
     text-align: center; }
-  .Mgaleria .Mgaleria__formato {
+  .mgaleria .mgaleria__formato {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 15px; }
-    .Mgaleria .Mgaleria__formato .Mgaleria__formato__item {
+    .mgaleria .mgaleria__formato .mgaleria__formato__item {
       width: 30%;
       height: 45%;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
-.Mgaleria__formato__item img {
+.mgaleria__formato__item img {
   width: 100%;
   height: 100%; }
 
@@ -146,11 +145,11 @@
 @media (max-width: 768px) {
   .gridcontainer {
     display: grid;
-    grid-template-areas: "main" "footer";
+    grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 60% 60%; }
+    grid-template-rows: 10% 70% 70%; }
   .cabecera {
-    grid-area: main;
+    grid-area: header;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -158,23 +157,22 @@
     background-color: black; }
   main {
     grid-area: main; }
-  .Mindex {
-    height: 220vh; }
-  .Mlabarberia {
+  .mindex {
+    height: 100%; }
+  .mlabarberia {
     display: flex;
     flex-direction: column; }
-    .Mlabarberia .Mlabarberia__historia {
+    .mlabarberia .mlabarberia__historia {
       width: 100%;
       height: 40vh; }
-    .Mlabarberia .Mlabarberia__imagen {
+    .mlabarberia .mlabarberia__imagen {
       width: 100%;
       height: 100vh; }
-  .Mgaleria .galeria__formato {
+  .mgaleria .mgaleria__formato {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .Mgaleria .galeria__formato .galeria__formato__item {
+    flex-direction: row;
+    height: auto; }
+    .mgaleria .mgaleria__formato .mgaleria__formato__item {
       height: 15vh;
       width: 40vw; }
   .servicios__cards {
@@ -190,5 +188,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 140vh;
-    padding: 32px 0; } }
+    height: 100%;
+    padding: 10px 0; } }

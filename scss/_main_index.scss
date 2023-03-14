@@ -1,4 +1,4 @@
-.Mindex{
+.mindex{
     display: flex;
     height: 80vh;
     align-items: center;
@@ -7,12 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    .mindex__titulo{
+        color: whitesmoke;
+        font-size: 2rem;
+        
+        
+    }
 }
 
 
-.Mindex__titulo{
-    color: whitesmoke;
-    font-size: 2rem;
-    
-    
-}
