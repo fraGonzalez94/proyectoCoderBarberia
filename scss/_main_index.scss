@@ -7,34 +7,33 @@
     height: 120vh;
     position: relative;
     overflow: hidden;
+    .mindex__titulo{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        color: white;
+        
+.mindex__titulo__subtitulo{
+    font-size: 1.5rem;
+
+}
+           
+    
+    }
+    .mindex__video{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+       
+    }
   
     
 
 }
 
-.mindex__titulo{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    color: white;
-       
-
-}
-
-.mindex__titulo__subtitulo{
-    font-size: 1.5rem;
-
-}
-
-.mindex__video{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    z-index: -1;
-   
-}
 
 .titulo__estilistas{
     text-align: center;
@@ -42,10 +41,6 @@
     
     
 }
-
-
-
-
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -53,7 +48,6 @@
   .marketing h2 {
     font-weight: 400;
   }
-  /* rtl:begin:ignore */
   .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;

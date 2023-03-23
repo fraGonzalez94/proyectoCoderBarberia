@@ -64,16 +64,20 @@
    }
     
     
+
+
+   .servicios{
+    height: 250vh;
      .servicios__cards{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        row-gap: 10px;
+        row-gap: 40px;
         
      }
     
      
-    
+   }
     footer {
         grid-area: footer;    
     }

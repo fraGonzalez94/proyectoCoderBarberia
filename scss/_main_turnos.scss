@@ -9,8 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
-}
+
 .main-turnos__form{
     display: flex;
     flex-direction: column;
@@ -19,14 +18,11 @@
     padding: 60px;
     max-width: 500px;
     background-color: #E7E7E7;
+    .main-turnos__form__tituloform{
+        font-size: 2rem;
+        text-align: center;
+    }
     
-    
-}
-.main-turnos__form__tituloform{
-    font-size: 2rem;
-    text-align: center;
-}
-
 .boton{
     display: block;
     background-color: #0095eb;
@@ -38,3 +34,11 @@
 
 }
  
+    
+    
+}
+}
+    
+
+
+
