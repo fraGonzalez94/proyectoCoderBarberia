@@ -1,7 +1,8 @@
 
 
 .servicios{
-    background-color: color-secundario ;
+   background-color: rgba(102, 102, 102, 0.849);
+    height: 90vh;
     .servicios__titulo{
         margin:auto;
         border-style: solid;
@@ -14,6 +15,7 @@
     justify-content: space-evenly;
     margin-top: 100px;
     .card{
+        background-image: linear-gradient(to bottom, #666465, #716f70, #7c7b7c, #878787, #939393, #9c9c9e, #a5a6a9, #aeb0b4, #b4bac0, #b9c6cb, #bdd1d4, #c4dcda);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -25,6 +27,7 @@
     }
     .card-title{
         font-size: 1.5rem;
+        text-align: center;
         }
     
  }

@@ -19,7 +19,7 @@
             
                 <nav class="navbar navbar-expand-lg bg-transparent">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="../index.html">Inicio</a>
+                      <a class="nav-link" href="../index.html">Inicio</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><img class="logo-index" src="../imagen_logo.ico" alt="logo"></span>
                         
@@ -40,11 +40,15 @@
             
         </header>
         <main class="main-turnos">
+
+            <div class="main-turnos__form">
+                <h1 class="main-turnos__form__tituloform"> ¡Rerserva tu lugar!</h1>
+            <form action="404.html">
             <fieldset>
-                <legend>Reserva tu turno</legend>
+                <legend>Servicio</legend>
                 <div>
                     <label for="servicio">Indique Tipo de servicio</label>
-                    <select name="servicio" id="servicio">
+                    <select name="servicio" id="servicio" required>
                         <option value="Corte de cabello">Corte de cabello</option>
                         <option value="arreglo de barba" selected>Arreglo de barba</option>
                         <option value="Color y decoracion">Color y decoracion</option>
@@ -54,13 +58,13 @@
 
                 </div>
             </fieldset>
-            <br>
+           
             
             <fieldset>
-                <legend>Elegi profesional</legend>
+                <legend>Elegi profesional </legend>
                 <div>
                     <label for="profesional">profesional</label>
-                    <select name="profesional" id="profesional">
+                    <select name="profesional" id="profesional" required>
                         <option value="Nahuel">Nahuel</option>
                         <option value="Juan" selected>Juan</option>
                         <option value="Martin">Martin</option>
@@ -70,7 +74,7 @@
 
                 </div>
             </fieldset>
-            <br>
+          
             <fieldset>
                 <legend>Elegi fecha disponible</legend>
                 <div>
@@ -79,9 +83,16 @@
                     <input id="hnac" name="hora_nac" type="time" required>
 
                 </div>
+                <br>
+                <div>
+                    <button class="boton" name="enviar" type="submit">Reservar</button>
+                </div>
            
                 
             </fieldset>
+        </div>
+        </form>
+            
         </main>
 
         <footer class="piedepagina">
@@ -105,6 +116,7 @@
                   <img src="../assets/img/logowsp.png" alt="logowsp">
               </div>
           </div>
+          
       </footer>
              
 

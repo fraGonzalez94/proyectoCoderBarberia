@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family= Anton & family= Indie+Flower & family= Roboto:wght@300 & display=swap");
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
 * {
   margin: 0;
   padding: 0;
@@ -48,16 +49,43 @@
 
 .mindex {
   display: flex;
-  height: 80vh;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../assets/img/imageninicio.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-  .mindex .mindex__titulo {
-    color: whitesmoke;
-    font-size: 2rem; }
+  flex-direction: column;
+  height: 120vh;
+  position: relative;
+  overflow: hidden; }
+
+.mindex__titulo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  color: white; }
+
+.mindex__titulo__subtitulo {
+  font-size: 1.5rem; }
+
+.mindex__video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1; }
+
+.titulo__estilistas {
+  text-align: center;
+  color: white; }
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center; }
+
+.marketing h2 {
+  font-weight: 400; }
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem; }
 
 .mlabarberia {
   background-color: white;
@@ -81,20 +109,26 @@
   .mgaleria .mgaleria__formato {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px; }
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px; }
     .mgaleria .mgaleria__formato .mgaleria__formato__item {
-      width: 30%;
-      height: 45%;
+      transition: height 2s, width 1s;
+      width: 20%;
+      height: 35%;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+      .mgaleria .mgaleria__formato .mgaleria__formato__item:hover {
+        height: 400px;
+        width: 400px; }
 
 .mgaleria__formato__item img {
   width: 100%;
   height: 100%; }
 
 .servicios {
-  background-color: color-secundario; }
+  background-color: rgba(102, 102, 102, 0.849);
+  height: 90vh; }
   .servicios .servicios__titulo {
     margin: auto;
     border-style: solid;
@@ -106,6 +140,7 @@
     justify-content: space-evenly;
     margin-top: 100px; }
     .servicios .servicios__cards .card {
+      background-image: linear-gradient(to bottom, #666465, #716f70, #7c7b7c, #878787, #939393, #9c9c9e, #a5a6a9, #aeb0b4, #b4bac0, #b9c6cb, #bdd1d4, #c4dcda);
       display: flex;
       align-items: center;
       justify-content: center; }
@@ -114,14 +149,44 @@
         height: 10vh;
         width: 5vw; }
     .servicios .servicios__cards .card-title {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      text-align: center; }
   .servicios .btn-primary {
     display: flex;
     align-items: center;
     justify-content: center; }
 
 .main-turnos {
-  height: 60vh; }
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/img/Movember-vintage-frame-design-vector-_-premium-image-by-rawpixel_com-_-taus-_-Vintage-frames_-Barber.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.main-turnos__form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 20px;
+  padding: 60px;
+  max-width: 500px;
+  background-color: #E7E7E7; }
+
+.main-turnos__form__tituloform {
+  font-size: 2rem;
+  text-align: center; }
+
+.boton {
+  display: block;
+  background-color: #0095eb;
+  padding: 10px 45px 10px 45px;
+  border: 0;
+  font-size: 1em;
+  color: white;
+  font-family: "Roboto", sans-serif; }
 
 .piedepagina {
   background-color: black;
@@ -147,11 +212,13 @@
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 10% 70% 70%; }
+    grid-template-rows: 4% 70% 70%; }
   .cabecera {
+    height: auto;
     grid-area: header;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: flex-end;
     flex-direction: column;
     position: static;
     background-color: black; }

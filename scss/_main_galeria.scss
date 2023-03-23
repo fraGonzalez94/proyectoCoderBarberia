@@ -8,13 +8,18 @@
     .mgaleria__formato{
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-around;
+        justify-content:space-between;
         gap: 15px;
+        margin-bottom: 20px;
         .mgaleria__formato__item{
-            width: 30%;
-            height: 45%;
+            transition: height 2s, width 1s;
+            width: 20%;
+            height: 35%;
             border-radius: map-get($bordes, border-radius-cincopx );
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            &:hover {
+                height: 400px; width: 400px;
+                
         
             
         
@@ -22,7 +27,8 @@
     
         
     }
-    
+   
+}
 }
 .mgaleria__formato__item img{
     width: 100%;

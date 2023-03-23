@@ -7,19 +7,21 @@
             "main"
             "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 10% 70% 70%;
+        grid-template-rows: 4% 70% 70%;
     }
     .cabecera {
+        height: auto;
         grid-area: header;
         display: flex;
-        justify-content: start;
+        justify-content: center;
+        align-items: flex-end;
         flex-direction: column;
         position:static;
         background-color: $color-primario;
+      
         
     }
-    
-    
+ 
      main {
         grid-area: main;
      }
