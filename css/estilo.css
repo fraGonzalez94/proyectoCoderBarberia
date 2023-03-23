@@ -84,9 +84,9 @@
   margin-left: .75rem; }
 
 .mlabarberia {
-  background-color: white;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  background-color: white; }
   .mlabarberia .mlabarberia__imagen {
     width: 50vw;
     height: 80vh;
