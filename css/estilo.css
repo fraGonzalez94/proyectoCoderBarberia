@@ -9,24 +9,18 @@
 
 .cabecera {
   top: 0;
-  display: flex;
-  flex-direction: row;
   position: sticky;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  height: 20vh;
   z-index: 1; }
 
-.navbar-brand {
-  color: white; }
+.logo {
+  height: 80px; }
 
-.nav-link {
-  color: white; }
+.colorfondo {
+  background-color: #080808; }
 
-.nav-link:hover {
-  color: gray;
-  transition: 0.3s; }
+.flexible {
+  justify-content: space-evenly;
+  width: 100%; }
 
 .nav-link__turnos {
   text-decoration: none;
@@ -39,13 +33,12 @@
   color: #9b3838;
   transition: 0.5s; }
 
-.navbar-toggler-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+.navbar-toggler {
+  background-color: white; }
 
-.logo-index {
-  width: 150%; }
+.nav-link:hover {
+  color: gray;
+  transition: 0.3s; }
 
 .mindex {
   display: flex;
@@ -201,33 +194,22 @@
       color: white; }
 
 @media (max-width: 768px) {
-  .gridcontainer {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 4% 70% 70%; }
-  .cabecera {
-    height: auto;
-    grid-area: header;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    position: static;
-    background-color: black; }
-  main {
-    grid-area: main; }
-  .mindex {
-    height: 100%; }
+  .mindex .mindex__titulo {
+    margin-top: 10px; }
+    .mindex .mindex__titulo .mindex__titulo__subtitulo {
+      margin-top: 10px;
+      font-size: 1.25rem; }
   .mlabarberia {
     display: flex;
     flex-direction: column; }
     .mlabarberia .mlabarberia__historia {
       width: 100%;
       height: 40vh; }
+      .mlabarberia .mlabarberia__historia .mlabarberia__historia__titulo {
+        margin-top: 10px; }
     .mlabarberia .mlabarberia__imagen {
       width: 100%;
-      height: 100vh; }
+      height: 60vh; }
   .mgaleria .mgaleria__formato {
     display: flex;
     flex-direction: row;
@@ -236,14 +218,22 @@
       height: 15vh;
       width: 40vw; }
   .servicios {
-    height: 250vh; }
+    height: 170vh; }
     .servicios .servicios__cards {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       row-gap: 40px; }
-  footer {
-    grid-area: footer; }
+  .main-turnos {
+    height: auto;
+    background-image: none;
+    margin-top: 10px; }
+    .main-turnos .main-turnos__form {
+      max-width: 350px;
+      background-color: #E7E7E7; }
+      .main-turnos .main-turnos__form .main-turnos__form__tituloform {
+        font-size: 2rem;
+        text-align: center; }
   .piedepagina {
     display: flex;
     margin-top: 30px;

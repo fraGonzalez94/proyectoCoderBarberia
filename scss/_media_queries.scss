@@ -1,36 +1,19 @@
 @media (max-width:768px){
     
-    .gridcontainer{
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 4% 70% 70%;
-    }
-    .cabecera {
-        height: auto;
-        grid-area: header;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        flex-direction: column;
-        position:static;
-        background-color: $color-primario;
-      
-        
-    }
- 
-     main {
-        grid-area: main;
-     }
     
-    
-     .mindex{
-        height:100%;
-      
-     }
+   .mindex{
+     
+      .mindex__titulo{
+         margin-top: 10px;
+         
+          
+  .mindex__titulo__subtitulo{
+   margin-top: 10px;
+      font-size: 1.25rem;
+  
+  }    
+      } 
+  }
     
      .mlabarberia{
         display: flex;
@@ -38,10 +21,13 @@
         .mlabarberia__historia{
          width: 100%;
          height: 40vh;
+         .mlabarberia__historia__titulo{
+           margin-top: 10px;
+         }
       }
       .mlabarberia__imagen{
          width: 100%;
-         height: 100vh;
+         height: 60vh;
      
       }
      }
@@ -53,9 +39,7 @@
         display: flex;
         flex-direction: row;
         height: auto;
-        
-        
-        
+          
         .mgaleria__formato__item{
          height: 15vh;
          width: 40vw;
@@ -67,7 +51,7 @@
 
 
    .servicios{
-    height: 250vh;
+    height: 170vh;
      .servicios__cards{
         display: flex;
         flex-wrap: wrap;
@@ -78,10 +62,24 @@
     
      
    }
-    footer {
-        grid-area: footer;    
-    }
-    
+
+
+   .main-turnos{
+      height: auto;
+      background-image: none;
+      margin-top: 10px;
+   
+  
+  .main-turnos__form{
+      max-width: 350px;
+      background-color: #E7E7E7;
+      .main-turnos__form__tituloform{
+          font-size: 2rem;
+          text-align: center;
+      }    
+  }
+  }
+   
     .piedepagina{
         display: flex;
         margin-top: 30px;
