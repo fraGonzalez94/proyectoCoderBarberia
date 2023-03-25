@@ -4,24 +4,26 @@
     @import "mixins";
     @include flex-direction-justificar (row,space-around);
     height: 40vh;
-    .piedepagina__mapa{
+    &__mapa{
         margin-top: 30px;
     }
-    .piedepagina__datos-contacto{
+    &__datos-contacto{
         @extend .piedepagina__social-media;
         margin-top: 60px;
         color: rgb(244, 244, 245);
           
     }
-    .piedepagina__social-media{
+    &__social-media{
         @import "mixins";
         @include flex-direction-justificar (column);
         align-items: center;
-        .piedepagina__social-media__titulo-redes{
+        &__titulo-redes{
             color: white;
         }
+        @media (max-width:768px){
+            margin-bottom: 30px;
+        }
     }
-    
 }
 
 

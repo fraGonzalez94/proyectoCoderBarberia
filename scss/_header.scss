@@ -32,13 +32,11 @@
     transition: 0.5s;
 }
 
-.navbar-toggler{
-    background-color: white;
-}
-
 .nav-link:hover{
     color: gray;
     transition: 0.3s;
 }
-
-
+.navbar-collapse{
+    padding: 0 16px;
+    text-align: center;
+}

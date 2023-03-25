@@ -33,12 +33,13 @@
   color: #9b3838;
   transition: 0.5s; }
 
-.navbar-toggler {
-  background-color: white; }
-
 .nav-link:hover {
   color: gray;
   transition: 0.3s; }
+
+.navbar-collapse {
+  padding: 0 16px;
+  text-align: center; }
 
 .mindex {
   display: flex;
@@ -80,12 +81,12 @@
   display: flex;
   width: 100%;
   background-color: white; }
-  .mlabarberia .mlabarberia__imagen {
+  .mlabarberia__imagen {
     width: 50vw;
     height: 80vh;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.678); }
-  .mlabarberia .mlabarberia__historia {
+  .mlabarberia__historia {
     text-align: center;
     margin: auto;
     width: 50vw; }
@@ -180,46 +181,55 @@
   flex-direction: row;
   justify-content: space-around;
   height: 40vh; }
-  .piedepagina .piedepagina__mapa {
+  .piedepagina__mapa {
     margin-top: 30px; }
-  .piedepagina .piedepagina__datos-contacto {
+  .piedepagina__datos-contacto {
     margin-top: 60px;
     color: #f4f4f5; }
-  .piedepagina .piedepagina__social-media, .piedepagina .piedepagina__datos-contacto {
+  .piedepagina__social-media, .piedepagina__datos-contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .piedepagina .piedepagina__social-media .piedepagina__social-media__titulo-redes, .piedepagina .piedepagina__datos-contacto .piedepagina__social-media__titulo-redes {
+    .piedepagina__social-media__titulo-redes {
       color: white; }
+    @media (max-width: 768px) {
+      .piedepagina__social-media, .piedepagina__datos-contacto {
+        margin-bottom: 30px; } }
 
 @media (max-width: 768px) {
-  .mindex .mindex__titulo {
-    margin-top: 10px; }
-    .mindex .mindex__titulo .mindex__titulo__subtitulo {
-      margin-top: 10px;
-      font-size: 1.25rem; }
+  .mindex {
+    height: auto;
+    padding: 32px; }
+    .mindex__titulo {
+      margin-top: 10px; }
+      .mindex__titulo__subtitulo {
+        margin-top: 10px;
+        font-size: 1.25rem; }
+    .mindex__video video {
+      height: 100%; }
   .mlabarberia {
     display: flex;
     flex-direction: column; }
-    .mlabarberia .mlabarberia__historia {
+    .mlabarberia__historia {
       width: 100%;
-      height: 40vh; }
-      .mlabarberia .mlabarberia__historia .mlabarberia__historia__titulo {
+      height: auto;
+      padding: 32px; }
+      .mlabarberia__historia__titulo {
         margin-top: 10px; }
-    .mlabarberia .mlabarberia__imagen {
+    .mlabarberia__imagen {
       width: 100%;
-      height: 60vh; }
-  .mgaleria .mgaleria__formato {
+      height: auto; }
+  .mgaleria__formato {
     display: flex;
     flex-direction: row;
     height: auto; }
-    .mgaleria .mgaleria__formato .mgaleria__formato__item {
+    .mgaleria__formato__item {
       height: 15vh;
       width: 40vw; }
   .servicios {
     height: 170vh; }
-    .servicios .servicios__cards {
+    .servicios__cards {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -228,15 +238,15 @@
     height: auto;
     background-image: none;
     margin-top: 10px; }
-    .main-turnos .main-turnos__form {
+    .main-turnos__form {
       max-width: 350px;
       background-color: #E7E7E7; }
-      .main-turnos .main-turnos__form .main-turnos__form__tituloform {
+      .main-turnos__form__tituloform {
         font-size: 2rem;
         text-align: center; }
   .piedepagina {
     display: flex;
-    margin-top: 30px;
+    margin-top: 0px;
     flex-direction: column;
     align-items: center;
     justify-content: center;

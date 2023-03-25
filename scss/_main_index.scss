@@ -1,55 +1,56 @@
-
-
-
-.mindex{
+.mindex {
     display: flex;
     flex-direction: column;
     height: 120vh;
     position: relative;
     overflow: hidden;
-    .mindex__titulo{
+
+    .mindex__titulo {
         display: flex;
         flex-direction: column;
         margin: auto;
         text-align: center;
         color: white;
-        
-.mindex__titulo__subtitulo{
-    font-size: 1.5rem;
 
-}
-           
-    
+        .mindex__titulo__subtitulo {
+            font-size: 1.5rem;
+
+        }
+
+
     }
-    .mindex__video{
+
+    .mindex__video {
         position: absolute;
         left: 0;
         top: 0;
         height: 100%;
         z-index: -1;
-       
+        
     }
-  
-    
+
+
 
 }
 
 
-.titulo__estilistas{
+.titulo__estilistas {
     text-align: center;
     color: white;
-    
-    
+
+
 }
+
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
-  }
-  .marketing h2 {
+}
+
+.marketing h2 {
     font-weight: 400;
-  }
-  .marketing .col-lg-4 p {
+}
+
+.marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
-  }
-
+}

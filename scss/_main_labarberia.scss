@@ -3,13 +3,13 @@
     display: flex;
     width: 100%;
     background-color: $color-secundario;
-    .mlabarberia__imagen{
+    &__imagen{
         width: 50vw;
         height: 80vh;
         border-radius: map-get($bordes, border-radius-diezpx);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
     }
-    .mlabarberia__historia{
+    &__historia{
         text-align: center;
         margin: auto;
         width: 50vw;
